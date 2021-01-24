@@ -11,22 +11,24 @@ body {
 }
 
 .movie {
-	width: 1000px;
 	margin: auto;
+	width: 100%;
+	max-width: 1000px;
 	text-align: center;
 }
 
 .movie__title {
-	margin-top: 2rem;
+	margin-top: 1.2em;
 	color: #fff;
-	font-size: 2rem;
-	font-weight: normal;
+	font-size: 1.8rem;
+	font-weight: 500;
 }
 
 .screen {
-	width: 600px;
-	height: 140px;
-	margin: auto;
+	margin: 1.5em auto 0 auto;
+	width: 90vw;
+	max-width: 720px;
+	max-height: 140px;
 }
 
 .screen__img {
@@ -34,16 +36,18 @@ body {
 }
 
 .screen__title {
-	transform: translateY(-5rem);
+	transform: translateY(-100%);
 	color: #ddd;
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	font-weight: 100;
 }
 
 .hall {
 	margin: auto;
-	width: 440px;
-	height: 280px;
+	width: 70vw;
+	height: 50vw;
+	max-width: 660px;
+	max-height: 380px;
 	display: grid;
 	grid-template: 1fr 2fr 1fr / repeat(10, 1fr);
 	grid-template-areas:
@@ -72,7 +76,9 @@ body {
 
 .seat {
 	position: relative;
+	width: 100%;
 	cursor: pointer;
+
 }
 
 .seat__input {
@@ -87,7 +93,7 @@ body {
 	height: 100%;
 	background-image: url(./img/seat.svg);
 	background-repeat: no-repeat;
-	background-size: 50px;
+	background-size: 110%;
 	background-position: center;
 }
 
