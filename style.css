@@ -6,6 +6,10 @@
 	outline: none;
 }
 
+body {
+	background-color: #222;
+}
+
 .movie {
 	width: 1000px;
 	margin: auto;
@@ -14,50 +18,56 @@
 
 .movie__title {
 	margin-top: 2rem;
-	color: #00347f;
+	color: #fff;
 	font-size: 2rem;
+	font-weight: normal;
 }
 
 .screen {
-	width: 700px;
+	width: 600px;
 	height: 140px;
 	margin: auto;
 }
 
+.screen__img {
+	max-width: 100%;
+}
+
 .screen__title {
 	transform: translateY(-5rem);
-	font-size: 1.5rem;
-	color: #2c78ff;
+	color: #ddd;
+	font-size: 1.3rem;
+	font-weight: 100;
 }
 
 .hall {
 	margin: auto;
-	width: 560px;
-	height: 320px;
+	width: 440px;
+	height: 280px;
 	display: grid;
-	grid-template: 1fr 2fr 1fr / repeat(8, 1fr);
+	grid-template: 1fr 2fr 1fr / repeat(10, 1fr);
 	grid-template-areas:
-		". . f f f f . ."
-		". m m m m m m ."
-		"b b b b b b b b";
+		". . f f f f f f . ."
+		". m m m m m m m m ."
+		"b b b b b b b b b b";
 }
 
 .hall__front {
 	grid-area: f;
 	display: grid;
-	grid-template: repeat(2, 1fr) / repeat(8, 1fr);
+	grid-template: repeat(2, 1fr) / repeat(6, 1fr);
 }
 
 .hall__middle {
 	grid-area: m;
 	display: grid;
-	grid-template: repeat(4, 1fr) / repeat(12, 1fr);
+	grid-template: repeat(4, 1fr) / repeat(8, 1fr);
 }
 
 .hall__back {
 	grid-area: b;
 	display: grid;
-	grid-template: repeat(2, 1fr) / repeat(16, 1fr);
+	grid-template: repeat(2, 1fr) / repeat(10, 1fr);
 }
 
 .seat {
@@ -75,20 +85,21 @@
 	display: block;
 	width: 100%;
 	height: 100%;
-	background-image: url(./img/seat-dark-blue.svg);
+	background-image: url(./img/seat.svg);
 	background-repeat: no-repeat;
-	background-size: 54px;
+	background-size: 50px;
 	background-position: center;
 }
 
+.seat__icon.inactive {
+	background-image:url(./img/seat-inactive.svg);
+}
+
 .seat__input:checked + .seat__icon {
-	background-image: url(./img/seat-checked-border.svg);
+	background-image: url(./img/seat-checked.svg);
 }
 
 .seat__input:focus + .seat__icon {
-	background-image: url(./img/seat-blue.svg);
-}
-
-.seat__input:focus:checked + .seat__icon {
-	background-image: url(./img/seat-checked.svg);
+	border: 2px solid #ddd;
+	border-radius: 5px;
 }
