@@ -1,31 +1,85 @@
 * {
-	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 	font-family: sans-serif;
 	outline: none;
+	font-size: 18px;
 }
 
 body {
 	background-color: #222;
 }
 
-.movie {
+.container {
 	margin: auto;
 	width: 100%;
-	max-width: 1000px;
-	text-align: center;
+	max-width: 760px;
 }
 
-.movie__title {
-	margin-top: 1.2em;
-	color: #fff;
+.header {
+	text-align: center;
+	color: #FFF;
+}
+
+.header__title {
+	margin-top: 1.2rem;
 	font-size: 1.8rem;
 	font-weight: 500;
 }
 
+.example {
+	margin: 1.5rem auto 0 auto;
+	width: 60%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+}
+
+.example__item {
+	margin: 0 .4rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.example__icon {
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	font-size: .8rem;
+}
+
+.gray {
+	background-color: #666;
+}
+
+.blue {
+	background-color: #00f3f7
+}
+
+.white {
+	background-color: #fff;
+}
+
+.example__hyphen {
+	margin-left: .5rem;
+	height: 2px;
+	width: 8px;
+	background-color: white;
+}
+
+.example__descr {
+	margin-left: 0.5rem;
+	display: block;
+	font-size: 1.1rem;
+	font-weight: 100;
+}
+
 .screen {
-	margin: 1.5em auto 0 auto;
+	margin: 1em auto 0 auto;
 	width: 90vw;
 	max-width: 720px;
 	max-height: 140px;
@@ -35,17 +89,17 @@ body {
 	max-width: 100%;
 }
 
-.screen__title {
-	transform: translateY(-100%);
+.screen__descr {
+	transform: translateY(-50%);
 	color: #ddd;
-	font-size: 1.2rem;
+	font-size: 1.3rem;
 	font-weight: 100;
 }
 
 .hall {
-	margin: auto;
-	width: 70vw;
-	height: 50vw;
+	margin: 1rem auto 0 auto;
+	width: 90vw;
+	height: 60vw;
 	max-width: 660px;
 	max-height: 380px;
 	display: grid;
@@ -76,13 +130,17 @@ body {
 
 .seat {
 	position: relative;
-	width: 100%;
+	width: 110%;
 	cursor: pointer;
-
 }
 
 .seat__input {
-	appearance: none;
+	position: absolute;
+	margin: -1px;
+	overflow: hidden;
+	width: 1px;
+	height: 1px;
+	clip: rect(0 0 0 0);
 }
 
 .seat__icon {
@@ -95,6 +153,9 @@ body {
 	background-repeat: no-repeat;
 	background-size: 110%;
 	background-position: center;
+	border: 2px solid transparent;
+	border-radius: 5px;
+
 }
 
 .seat__icon.inactive {
@@ -106,6 +167,5 @@ body {
 }
 
 .seat__input:focus + .seat__icon {
-	border: 2px solid #ddd;
-	border-radius: 5px;
+	border-color: #eee;
 }

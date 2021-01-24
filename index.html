@@ -4,17 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cinema booking</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>movie seat booking</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <article class="movie">
-        <h1 class="movie__title">Choose your seats</h1>
-        <figure class="screen">
-            <img src="./img/screen.svg" class="screen__img" alt="screen">
-            <figcaption class="screen__title">screen</figcaption>
-        </figure>
+    <article class="container">
+        <header class="header">
+            <h1 class="header__title">Choose your seats</h1>
+            <section class="example">
+                <div class="example__item">
+                    <div class="example__icon gray"></div>
+                    <div class="example__hyphen"></div>
+                    <div class="example__descr">N/A</div>
+                </div>
+                <div class="example__item">
+                    <div class="example__icon blue"></div>
+                    <div class="example__hyphen"></div>
+                    <div class="example__descr">Selected</div>
+                </div>
+                <div class="example__item">
+                    <div class="example__icon white"></div>
+                    <div class="example__hyphen"></div>
+                    <div class="example__descr">A</div>
+                </div>
+            </section>
+            <figure class="screen">
+                <img src="./img/screen.svg" class="screen__img" alt="screen">
+                <figcaption class="screen__descr">Screen</figcaption>
+            </figure>
+        </header>
+
         <form action="" class="hall">
             <section class="hall__front">
                 <label class="seat">
