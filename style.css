@@ -169,3 +169,9 @@ body {
 .seat__input:focus + .seat__icon {
 	border-color: #eee;
 }
+
+@media screen and (min-width: 764px) {
+	* {
+		font-size: 24px;
+	}
+}
