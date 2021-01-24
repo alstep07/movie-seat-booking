@@ -23,7 +23,7 @@ body {
 	margin: auto;
 	width: 100%;
 	max-width: 760px;
-	padding: 1.2rem 0;
+	padding: 1rem 0;
 }
 
 .header {
@@ -73,16 +73,16 @@ body {
 }
 
 .example__hyphen {
-	margin-left: .5rem;
+	margin-left: .4rem;
 	height: 2px;
 	width: 8px;
 	background-color: white;
 }
 
 .example__descr {
-	margin-left: 0.5rem;
+	margin-left: 0.4rem;
 	display: block;
-	font-size: 1.1rem;
+	font-size: .9rem;
 	font-weight: 100;
 }
 
@@ -107,9 +107,9 @@ body {
 .hall {
 	margin: 1rem auto 0 auto;
 	width: 90vw;
-	height: 80vw;
-	max-width: 660px;
-	max-height: 400px;
+	height: 70vw;
+	max-width: 600px;
+	max-height: 360px;
 	display: grid;
 	grid-template: 1fr 2fr 1fr / repeat(10, 1fr);
 	grid-template-areas:
@@ -182,6 +182,6 @@ body {
 
 @media screen and (min-width: 764px) {
 	* {
-		font-size: 24px;
+		font-size: 22px;
 	}
 }
