@@ -12,7 +12,7 @@
 <body>
     <article class="container">
         <header class="header">
-            <h1 class="header__title">Choose your seats</h1>
+            <h1 class="header__title" tabindex="0">Choose your seats</h1>
             <div class="example">
                 <div class="example__item">
                     <div class="example__icon gray"></div>
@@ -33,275 +33,278 @@
             </div>
             <figure class="screen">
                 <img src="./img/screen.svg" class="screen__img" alt="screen">
-                <figcaption class="screen__descr">Screen</figcaption>
+                <figcaption class="screen__descr" tabindex="0">Screen</figcaption>
             </figure>
         </header>
 
         <form class="hall">
-            <div class="hall__front">
-                <label class="seat">
-                    <input type="checkbox" class="seat__input" id="1">
+            <section class="hall__front">
+                <h2 class="visually-hidden">front rows</h2>
+                <label class="seat">row 1 seat 1
+                    <input type="checkbox" class="seat__input" id="1" disabled>
                     <span class="seat__icon inactive"></span>
                 </label>
-                <label class="seat">
-                    <input type="checkbox" class="seat__input" id="2">
+                <label class="seat">row 1 seat 2
+                    <input type="checkbox" class="seat__input" id="2" disabled>
                     <span class="seat__icon inactive"></span>
                 </label>
-                <label class="seat">
-                    <input type="checkbox" class="seat__input" id="3">
+                <label class="seat">row 1 seat 3
+                    <input type="checkbox" class="seat__input" id="3" disabled>
                     <span class="seat__icon inactive"></span>
                 </label>
-                <label class="seat">
-                    <input type="checkbox" class="seat__input" id="4">
+                <label class="seat">row 1 seat 4
+                    <input type="checkbox" class="seat__input" id="4" disabled>
                     <span class="seat__icon inactive"></span>
                 </label>
-                <label class="seat">
-                    <input type="checkbox" class="seat__input" id="5">
+                <label class="seat">row 1 seat 5
+                    <input type="checkbox" class="seat__input" id="5" disabled>
                     <span class="seat__icon inactive"></span>
                 </label>
-                <label class="seat">
-                    <input type="checkbox" class="seat__input" id="6">
+                <label class="seat">row 1 seat 6
+                    <input type="checkbox" class="seat__input" id="6" disabled>
                     <span class="seat__icon inactive"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 2 seat 1
                     <input type="checkbox" class="seat__input" id="7">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 2 seat 2
                     <input type="checkbox" class="seat__input" id="8">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 2 seat 3
                     <input type="checkbox" class="seat__input" id="9">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 2 seat 4
                     <input type="checkbox" class="seat__input" id="10">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 2 seat 5
                     <input type="checkbox" class="seat__input" id="11">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 2 seat 6
                     <input type="checkbox" class="seat__input" id="12">
                     <span class="seat__icon"></span>
                 </label>
-            </div>
+            </section>
 
-            <div class="hall__middle">
-                <label class="seat">
+            <section class="hall__middle">
+                <h2 class="visually-hidden">middle rows</h2>
+                <label class="seat">row 3 seat 1
                     <input type="checkbox" class="seat__input" id="13">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 3 seat 2
                     <input type="checkbox" class="seat__input" id="14">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 3 seat 3
                     <input type="checkbox" class="seat__input" id="15">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 3 seat 4
                     <input type="checkbox" class="seat__input" id="16">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 3 seat 5
                     <input type="checkbox" class="seat__input" id="17">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 3 seat 6
                     <input type="checkbox" class="seat__input" id="18">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 3 seat 7
                     <input type="checkbox" class="seat__input" id="19">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 3 seat 8
                     <input type="checkbox" class="seat__input" id="20">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 4 seat 1
                     <input type="checkbox" class="seat__input" id="21">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 4 seat 2
                     <input type="checkbox" class="seat__input" id="22">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 4 seat 3
                     <input type="checkbox" class="seat__input" id="23">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 4 seat 4
                     <input type="checkbox" class="seat__input" id="24">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 4 seat 5
                     <input type="checkbox" class="seat__input" id="25">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 4 seat 6
                     <input type="checkbox" class="seat__input" id="26">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 4 seat 7
                     <input type="checkbox" class="seat__input" id="27">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 4 seat 8
                     <input type="checkbox" class="seat__input" id="28">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 5 seat 1
                     <input type="checkbox" class="seat__input" id="29">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 5 seat 2
                     <input type="checkbox" class="seat__input" id="30">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 5 seat 3
                     <input type="checkbox" class="seat__input" id="31">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 5 seat 4
                     <input type="checkbox" class="seat__input" id="32">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 5 seat 5
                     <input type="checkbox" class="seat__input" id="33">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 5 seat 6
                     <input type="checkbox" class="seat__input" id="34">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 5 seat 7
                     <input type="checkbox" class="seat__input" id="35">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 5 seat 8
                     <input type="checkbox" class="seat__input" id="36">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 6 seat 1
                     <input type="checkbox" class="seat__input" id="37">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 6 seat 2
                     <input type="checkbox" class="seat__input" id="38">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 6 seat 3
                     <input type="checkbox" class="seat__input" id="39">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 6 seat 4
                     <input type="checkbox" class="seat__input" id="40">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 6 seat 5
                     <input type="checkbox" class="seat__input" id="41">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 6 seat 6
                     <input type="checkbox" class="seat__input" id="42">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 6 seat 7
                     <input type="checkbox" class="seat__input" id="43">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 6 seat 8
                     <input type="checkbox" class="seat__input" id="44">
                     <span class="seat__icon"></span>
                 </label>
-            </div>
+            </section>
 
-            <div class="hall__back">
-                <label class="seat">
+            <section class="hall__back">
+                <h2 class="visually-hidden">back rows</h2>
+                <label class="seat">row 7 seat 1
                     <input type="checkbox" class="seat__input" id="45">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 7 seat 2
                     <input type="checkbox" class="seat__input" id="46">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 7 seat 3
                     <input type="checkbox" class="seat__input" id="47">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 7 seat 4
                     <input type="checkbox" class="seat__input" id="48">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 7 seat 5
                     <input type="checkbox" class="seat__input" id="49">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 7 seat 6
                     <input type="checkbox" class="seat__input" id="50">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 7 seat 7
                     <input type="checkbox" class="seat__input" id="51">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 7 seat 8
                     <input type="checkbox" class="seat__input" id="52">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 7 seat 9
                     <input type="checkbox" class="seat__input" id="53">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 7 seat 10
                     <input type="checkbox" class="seat__input" id="54">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 8 seat 1
                     <input type="checkbox" class="seat__input" id="55">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 8 seat 2
                     <input type="checkbox" class="seat__input" id="56">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 8 seat 3
                     <input type="checkbox" class="seat__input" id="57">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 8 seat 4
                     <input type="checkbox" class="seat__input" id="58">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 8 seat 5
                     <input type="checkbox" class="seat__input" id="59">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 8 seat 6
                     <input type="checkbox" class="seat__input" id="60">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 8 seat 7
                     <input type="checkbox" class="seat__input" id="61">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 8 seat 8
                     <input type="checkbox" class="seat__input" id="62">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 8 seat 9
                     <input type="checkbox" class="seat__input" id="63">
                     <span class="seat__icon"></span>
                 </label>
-                <label class="seat">
+                <label class="seat">row 8 seat 10
                     <input type="checkbox" class="seat__input" id="64">
                     <span class="seat__icon"></span>
                 </label>
-            </div>
+            </section>
         </form>
     </article>
 </body>
