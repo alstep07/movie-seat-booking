@@ -163,6 +163,7 @@ body {
 	color: #fff;
 	background-color: #45b756;
 	border-radius: 5px;
+	cursor: pointer;
 }
 
 /* states of inputs */
