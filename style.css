@@ -94,13 +94,13 @@ body {
 
 .screen {
 	margin: 1em auto 0 auto;
-	width: 95vw;
-	max-width: 640px;
-	height: auto;
+	max-width: 95vw;
 }
 
 .screen__img {
-	width: 100%;
+	width: 640px;
+	height: auto;
+	max-width: 100%;
 }
 
 .hall {
