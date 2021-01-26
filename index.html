@@ -16,19 +16,19 @@
             <h1 class="header__title" tabindex="0">Choose your seats</h1>
             <div class="example">
                 <div class="example__item">
-                    <div class="example__icon example__icon--non-available"></div>
+                    <div class="example__icon example__icon--not-available"></div>
                     <div class="example__hyphen"></div>
-                    <div class="example__descr">N/A</div>
+                    <div class="example__desc">N/A</div>
                 </div>
                 <div class="example__item">
                     <div class="example__icon example__icon--selected"></div>
                     <div class="example__hyphen"></div>
-                    <div class="example__descr">Selected</div>
+                    <div class="example__desc">Selected</div>
                 </div>
                 <div class="example__item">
                     <div class="example__icon example__icon--available"></div>
                     <div class="example__hyphen"></div>
-                    <div class="example__descr">A</div>
+                    <div class="example__desc">A</div>
                 </div>
             </div>
             <figure class="screen">
@@ -38,8 +38,7 @@
         </header>
 
         <form aria-label="cinema hall" tabindex="0" class="hall">
-            <section class="hall__front">
-                <h2 class="visually-hidden">front rows</h2>
+            <div class="hall__front">
                 <label class="seat">
                     <input aria-label="row 1 seat 1" type="checkbox" class="seat__input visually-hidden" id="1"
                         disabled>
@@ -94,10 +93,9 @@
                     <input aria-label="row 2 seat 6" type="checkbox" class="seat__input visually-hidden" id="12">
                     <span class="seat__icon"></span>
                 </label>
-            </section>
+            </div>
 
-            <section class="hall__middle">
-                <h2 class="visually-hidden">middle rows</h2>
+            <div class="hall__middle">
                 <label class="seat">
                     <input aria-label="row 3 seat 1" type="checkbox" class="seat__input visually-hidden" id="13">
                     <span class="seat__icon"></span>
@@ -226,10 +224,9 @@
                     <input aria-label="row 6 seat 8" type="checkbox" class="seat__input visually-hidden" id="44">
                     <span class="seat__icon"></span>
                 </label>
-            </section>
+            </div>
 
-            <section class="hall__back">
-                <h2 class="visually-hidden">back rows</h2>
+            <div class="hall__back">
                 <label class="seat">
                     <input aria-label="row 7 seat 1" type="checkbox" class="seat__input visually-hidden" id="45">
                     <span class="seat__icon"></span>
@@ -310,7 +307,8 @@
                     <input aria-label="row 8 seat 10" type="checkbox" class="seat__input visually-hidden" id="64">
                     <span class="seat__icon"></span>
                 </label>
-            </section>
+            </div>
+
             <button class="submit-btn" type="submit">Book Now</button>
         </form>
     </article>

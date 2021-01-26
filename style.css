@@ -9,7 +9,6 @@
 
 :focus {
 	outline: none;
-	border-radius: 4px;
 }
 
 .visually-hidden {
@@ -64,7 +63,7 @@ body {
 	border-radius: 50%;
 }
 
-.example__icon--non-available {
+.example__icon--not-available {
 	background-color: #506970;
 }
 
@@ -83,7 +82,7 @@ body {
 	background-color: #f1f1f1;
 }
 
-.example__descr {
+.example__desc {
 	margin-left: 0.4rem;
 	display: block;
 	font-size: 0.9rem;
@@ -184,6 +183,7 @@ body {
 	}
 
 	:focus {
+		border-radius: 4px;
 		box-shadow: 0 0 0 2px #cfcfcf;
 	}
 
