@@ -10,7 +10,6 @@
 :focus {
 	outline: none;
 	border-radius: 4px;
-	box-shadow: 0 0 0 2px #cfcfcf;
 }
 
 .visually-hidden {
@@ -176,15 +175,21 @@ body {
 	background-image: url(./img/seat-checked.svg);
 }
 
-.seat__input:focus + .seat__icon {
-	box-shadow: 0 0 0 2px #ccc;
-}
+
 
 /* media styles for medium and large devices */
 
 @media screen and (min-width: 760px) {
 	* {
 		font-size: 22px;
+	}
+
+	:focus {
+		box-shadow: 0 0 0 2px #cfcfcf;
+	}
+
+	.seat__input:focus + .seat__icon {
+		box-shadow: 0 0 0 2px #cfcfcf;
 	}
 
 	.container {
