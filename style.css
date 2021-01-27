@@ -7,6 +7,10 @@
 	border: none;
 }
 
+body {
+	background-color: #2a2a38;
+}
+
 :focus {
 	outline: none;
 }
@@ -20,15 +24,11 @@
 	clip: rect(0 0 0 0);
 }
 
-body {
-	background-color: #2a2a38;
-}
-
-.container {
+.booking {
+	width: 760px;
+	max-width: 100%;
 	margin: auto;
-	width: 100%;
-	max-width: 760px;
-	padding: 2rem 0;
+	padding: 2rem .5rem;
 }
 
 .header {
@@ -89,115 +89,14 @@ body {
 	font-weight: 100;
 }
 
-.screen {
-	margin: 1em auto 0 auto;
-	max-width: 95vw;
-	grid-area: s;
+.cinema {
+	margin-top: 1rem;
 }
 
 .screen__img {
-	width: 640px;
-	height: auto;
-	max-width: 100%;
-}
-
-.hall {
 	margin: auto;
-	width: 95vw;
-	height: 70vw;
-	max-width: 540px;
-	max-height: 420px;
-	display: grid;
-	grid-template: 1fr 1fr 2fr 1fr / repeat(10, 1fr);
-	grid-template-areas:
-		"s s s s s s s s s s"
-		". . f f f f f f . ."
-		". m m m m m m m m ."
-		"b b b b b b b b b b"
-		;
-}
-
-.hall__front {
-	grid-area: f;
-	display: grid;
-	grid-template: repeat(2, 1fr) / repeat(6, 1fr);
-}
-
-.hall__middle {
-	grid-area: m;
-	display: grid;
-	grid-template: repeat(4, 1fr) / repeat(8, 1fr);
-}
-
-.hall__back {
-	grid-area: b;
-	display: grid;
-	grid-template: repeat(2, 1fr) / repeat(10, 1fr);
-}
-
-.seat {
-	position: relative;
-	width: 100%;
-	cursor: pointer;
-}
-
-.seat__icon {
-	position: absolute;
-	width: 100%;
-	height: 100%;
 	display: block;
-	background-image: url(./img/seat.svg);
-	background-repeat: no-repeat;
-	background-size: 125%;
-	background-position: center;
-	border-radius: 5px;
+	max-width: 640px;
 }
 
-/* .submit-btn {
-	grid-area: s;
-	margin-top: .9rem;
-	max-height: 46px;
-	font-size: 1rem;
-	font-weight: 100;
-	color: #fff;
-	background-color: #3c9c4a;
-	border-radius: 5px;
-	cursor: pointer;
-} */
-
-/* states of inputs */
-
-.seat__input:disabled + .seat__icon {
-	background-image: url(./img/seat-inactive.svg);
-}
-
-.seat__input:checked + .seat__icon {
-	background-image: url(./img/seat-checked.svg);
-}
-
-
-
-/* media styles for medium and large devices */
-
-@media screen and (min-width: 670px) {
-	* {
-		font-size: 22px;
-	}
-
-	:focus {
-		border-radius: 4px;
-		box-shadow: 0 0 0 2px #cfcfcf;
-	}
-
-	.seat__input:focus + .seat__icon {
-		box-shadow: 0 0 0 2px #cfcfcf;
-	}
-
-	.container {
-		padding: 1rem 0;
-	}
-
-	.example {
-		margin-top: 1.4rem;
-	}
-}
+.

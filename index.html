@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <article class="container">
+    <article class="booking">
         <header class="header">
             <h1 class="header__title" tabindex="0">Choose your seats</h1>
             <div class="example">
@@ -38,11 +38,10 @@
                 <h2 class="visually-hidden" tabindex="0">Screen</h2>
                 <img src="./img/screen.svg" class="screen__img" alt="screen">
             </section>
-            <section class="hall">
-                <fieldset class="hall">
-                    <legend class="visually-hidden">cinema hall</legend>
-
-                    <div class="hall__front">
+            <section class="cinema__hall">
+                <h2 class="visually-hidden">cinema hall</h2>
+                <form class="hall__seats" id="tickets">
+                    <div class="hall__seats--front">
                     <label class="seat">
                         <input aria-label="row 1 seat 1" type="checkbox" class="seat__input visually-hidden" id="1"
                             disabled>
@@ -99,7 +98,7 @@
                     </label>
                     </div>
 
-                    <div class="hall__middle">
+                    <div class="hall__seats--middle">
                     <label class="seat">
                         <input aria-label="row 3 seat 1" type="checkbox" class="seat__input visually-hidden" id="13">
                         <span class="seat__icon"></span>
@@ -230,7 +229,7 @@
                     </label>
                     </div>
 
-                    <div class="hall__back">
+                    <div class="hall__seats--back">
                     <label class="seat">
                         <input aria-label="row 7 seat 1" type="checkbox" class="seat__input visually-hidden" id="45">
                         <span class="seat__icon"></span>
@@ -312,10 +311,8 @@
                         <span class="seat__icon"></span>
                     </label>
                     </div>
-
-
-                </fieldset>
-                <button class="submit-btn" type="submit">Book Now</button>
+                </form>
+                <button class="submit-btn" form="tickets" type="submit">Book Now</button>
             </section>
         </main>
     </article>
