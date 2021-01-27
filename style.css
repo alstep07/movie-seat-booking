@@ -42,15 +42,15 @@ body {
 }
 
 .example {
-	margin: 2.5rem auto 0 auto;
-	width: 60%;
+	margin: auto;
+	margin-top: 2.5rem;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: center;
 }
 
 .example__item {
-	margin: 0 0.4rem;
+	margin: 0 0.5rem;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -92,6 +92,7 @@ body {
 .screen {
 	margin: 1em auto 0 auto;
 	max-width: 95vw;
+	grid-area: s;
 }
 
 .screen__img {
@@ -107,12 +108,13 @@ body {
 	max-width: 540px;
 	max-height: 420px;
 	display: grid;
-	grid-template: 1fr 2fr 1fr 1fr / repeat(10, 1fr);
+	grid-template: 1fr 1fr 2fr 1fr / repeat(10, 1fr);
 	grid-template-areas:
+		"s s s s s s s s s s"
 		". . f f f f f f . ."
 		". m m m m m m m m ."
 		"b b b b b b b b b b"
-		". . . s s s s . . .";
+		;
 }
 
 .hall__front {
@@ -151,7 +153,7 @@ body {
 	border-radius: 5px;
 }
 
-.submit-btn {
+/* .submit-btn {
 	grid-area: s;
 	margin-top: .9rem;
 	max-height: 46px;
@@ -161,7 +163,7 @@ body {
 	background-color: #3c9c4a;
 	border-radius: 5px;
 	cursor: pointer;
-}
+} */
 
 /* states of inputs */
 
@@ -177,7 +179,7 @@ body {
 
 /* media styles for medium and large devices */
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 670px) {
 	* {
 		font-size: 22px;
 	}
