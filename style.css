@@ -266,12 +266,12 @@ body {
 
 .modal__confirm {
 	width: 120px;
+	margin-right: 20px;
 	background-color: #2ea151;
 }
 
 .modal__cancel {
 	width: 120px;
-	margin-left: 20px;
 	background-color: #db504b;
 }
 
