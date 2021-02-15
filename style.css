@@ -5,6 +5,7 @@
 	font-family: sans-serif;
 	font-size: 18px;
 	border: none;
+	text-align: center;
 }
 
 body {
@@ -26,19 +27,18 @@ body {
 
 .booking-container {
 	margin: auto;
-	width: 760px;
+	width: 1100px;
 	max-width: 100%;
-	padding: 30px 10px;
 }
 
 .header {
-	text-align: center;
-	color: #fff;
+	margin-top: 20px;
 }
 
 .header__title {
 	font-size: 1.8rem;
 	font-weight: 500;
+	color: #f1f1f1;
 }
 
 .example {
@@ -47,6 +47,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	color: #f1f1f1;
 }
 
 .example__item {
@@ -90,6 +91,7 @@ body {
 
 .cinema {
 	margin-top: 30px;
+	padding: 20px 10px;
 }
 
 .screen__img {
@@ -149,9 +151,28 @@ body {
 	background-image: url(./img/seat-inactive.svg);
 }
 
-.submit-btn {
+.cart {
+	margin-top: 20px;
+	min-height: 150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 20px;
+	background-color: #5c5c61;
+}
+
+.cart__title {
+	width: 100%;
+	grid-area: a;
+	color: #f1f1f1;
+	font-size: 1.4rem;
+	font-weight: 300;
+}
+
+.cart__submit-btn {
 	display: block;
-	margin: 40px auto;
+	margin-top: 20px;
 	width: 250px;
 	height: 50px;
 	font-size: 1.2rem;
@@ -162,9 +183,20 @@ body {
 	cursor: pointer;
 }
 
+.cart__empty {
+	margin-top: 20px;
+	color: #d1d1d1;
+	font-weight: 300;
+	font-size: .9rem;
+}
+
 @media (min-width: 370px) {
 	* {
 		font-size: 20px;
+	}
+
+	.header {
+		margin-top: 30px;
 	}
 
 	.example {
@@ -201,6 +233,30 @@ body {
 
 	.submit-btn {
 		width: 320px;
+	}
+}
+
+@media (min-width: 770px) {
+	.booking-container {
+		display: grid;
+		grid-template: 1fr 3fr / 2fr 1fr;
+	}
+
+	.header {
+		grid-column: 1;
+		grid-row: 1;
+	}
+
+	.cinema {
+		padding: 0;
+		grid-column: 1;
+		grid-row: 2;
+	}
+
+	.cart {
+		margin-top: 30px;
+		grid-column: 2;
+		grid-row: 1 / 3;
 	}
 }
 
