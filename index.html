@@ -320,10 +320,22 @@
                 <ul class="cart__tickets">
                     <p class="cart__empty">No seats selected yet</p>
                 </ul>
+                <p class="cart__total">Total: $ 0.00</p>
             </div>
-            <button class="cart__submit-btn" form="tickets" type="submit">Book Now</button>
+            <button class="cart-btn cart-btn--submit" >Book now</button>
+            <button class="cart-btn cart-btn--cancel" form="tickets" type="reset">Cancel</button>
         </aside>
-
+        <div class="cart__modal" id="modal">
+            <div class="modal__window">
+                <h3 class="modal__title">Please confirm booking:</h3>
+                <p class="modal__tickets"></p>
+                <p class="modal__total"></p>
+                <div class="modal__buttons">
+                    <button class="cart-btn modal__confirm" form="tickets" type="submit">Confirm</button>
+                    <button class="cart-btn modal__cancel">Cancel</button>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="./script.js"></script>
 </body>
