@@ -51,7 +51,7 @@ const removeSeat = (seatToRemove, selectedSeats) => {
 	selectedSeats.splice(index, 1);
 };
 
-const rejectModalConfirm = () => {
+const rejectModal = () => {
 	modalTickets.textContent = 'No seats selected';
 	modalConfirmButton.style.display = 'none';
 };
