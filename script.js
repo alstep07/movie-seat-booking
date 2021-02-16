@@ -13,10 +13,10 @@ const PRICE = 5;
 
 const createSelectedSeatsTemplates = (selectedSeats) => {
 	const templates = selectedSeats.map((seat) => {
-		return `<li class="selected-seats__ticket">
+		return `<div class="selected-seats__ticket">
                     <p class="ticket__location">${seat}</p>
                     <p class="ticket__price">$${PRICE.toFixed(2)}</p>
-                </li>`;
+                </div>`;
 	});
 	return templates;
 };
