@@ -51,25 +51,12 @@ const removeSeat = (seatToRemove, selectedSeats) => {
 	selectedSeats.splice(index, 1);
 };
 
-const rejectModal = () => {
-	modalTickets.textContent = 'No seats selected';
-	modalConfirmButton.style.display = 'none';
-};
-
-const fillModal = (selectedSeats) => {
+const updateModal = (selectedSeats) => {
 	let seats = selectedSeats.length;
 	let total = (seats * PRICE).toFixed(2);
-	modalTickets.textContent = `Seats: ${seats}`;
-	modalTotal.textContent = `Total: $${total}`;
-	modalConfirmButton.style.display = 'block';
-};
-
-const updateModal = (selectedSeats) => {
-	if (selectedSeats.length) {
-		fillModal(selectedSeats);
-	} else {
-		rejectModal();
-	}
+	modalTickets.textContent = (seats > 0) ? `Seats: ${seats}` : 'No seats selected';
+	modalTotal.textContent = (seats > 0) ? `Total: $${total}` : '';
+	modalConfirmButton.style.display = (seats > 0) ? 'block' : 'none';
 };
 
 const showModal = () => {
