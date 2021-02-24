@@ -41,19 +41,13 @@ const updateCart = (selectedSeatsNodeList) => {
 const clearCart = () => {
 	seatsCart.innerHTML = '<p class="cart__empty">No seats selected yet</p>';
 	cartTotal.textContent = 'Total: $0.00';
-	clearModal();
+	updateModal(0);
 };
 
 const updateModal = (seatsAmount) => {
 	modalAmount.textContent = seatsAmount ? `Seats: ${seatsAmount}` : 'No seats selected';
 	modalTotal.textContent = seatsAmount ? createTotalTemplate(seatsAmount) : '';
 	modalConfirmButton.style.display = seatsAmount ? 'block' : 'none';
-};
-
-const clearModal = () => {
-	modalAmount.textContent = 'No seats selected';
-	modalTotal.textContent = '';
-	modalConfirmButton.style.display = 'none';
 };
 
 const showModal = () => {
