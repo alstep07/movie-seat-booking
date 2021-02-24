@@ -262,6 +262,7 @@ body {
 }
 
 .modal__confirm {
+	display: none;
 	width: 120px;
 	margin-right: 20px;
 	background-color: #2ea151;
