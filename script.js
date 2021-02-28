@@ -1,8 +1,7 @@
 const seatsForm = document.querySelector('#tickets');
 const seatsCart = document.querySelector('#cart-tickets');
 const cartTotal = document.querySelector('#cart-total');
-const cartConfirmButton = document.querySelector('#cart-confirm');
-const cartCancelButton = document.querySelector('#cart-cancel');
+const cart = document.querySelector('#cart');
 const modal = document.querySelector('#modal');
 const modalConfirmButton = modal.querySelector('#modal-confirm');
 const modalCancelButton = modal.querySelector('#modal-cancel');
@@ -20,8 +19,7 @@ const createSeatTemplate = (seat) => {
 
 const createTotalTemplate = (seatsAmount) => {
 	const total = (PRICE * seatsAmount).toFixed(2);
-	const template = 'Total: $' + total;
-	return template;
+	return 'Total: $' + total;
 };
 
 const updateCart = (selectedSeatsNodeList) => {
@@ -56,6 +54,7 @@ const showModal = () => {
 
 const hideModal = () => {
 	modal.style.display = 'none';
+	document.body.style.overflow = '';
 };
 
 seatsForm.addEventListener('change', () => {
@@ -63,8 +62,19 @@ seatsForm.addEventListener('change', () => {
 	updateCart(seats);
 });
 
-cartCancelButton.addEventListener('click', clearCart);
-
-cartConfirmButton.addEventListener('click', showModal);
+cart.addEventListener('click', ({ target }) => {
+	if (target.id === 'cart-confirm') {
+		document.body.style.overflow = 'hidden';
+		showModal();
+	} else if (target.id === 'cart-cancel') {
+		clearCart();
+	}
+});
 
 modalCancelButton.addEventListener('click', hideModal);
+
+document.addEventListener('keydown', ({key}) => {
+	if (key === 'Escape') {
+		hideModal();
+	}
+})
